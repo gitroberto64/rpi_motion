@@ -1,0 +1,5 @@
+{
+    "camera" : { "hflip": false, "vflip": false, "bitrate": 1000000, "framerate": 8, "ircat": false },
+    "motion" : { "analyze": true, "daythreshold": 70, "nightthreshold": 50, "sensitive": 10, "top": 40, "bottom": 60, "left": 40, "right": 60 },
+    "ftp" : { "active": true, "address": "192.168.1.100", "user": "bbb", "pass": "Fz;gZl|@1x,Xmd6?" }
+}

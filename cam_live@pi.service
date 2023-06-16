@@ -1,0 +1,12 @@
+[Unit]
+Description=CAM live
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+IgnoreSIGPIPE=false
+ExecStart=/home/pi/bin/cam_live.py --bitrate=1000000 --framerate=8
+ExecStop=/usr/bin/pkill cam_live.py
+
+[Install]
+WantedBy=default.target

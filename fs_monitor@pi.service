@@ -1,0 +1,9 @@
+[Unit]
+Description=FS Monitor
+
+[Service]
+ExecStart=/home/bbb/bin/fs_monitor.py /mnt/data/cams 50 60
+ExecStop=/usr/bin/pkill fs_monitor.py
+
+[Install]
+WantedBy=default.target
